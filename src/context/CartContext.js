@@ -46,6 +46,8 @@ export function CartContextProvider({ children }) {
     return product;
   }
 
+  // Query Shopify API for updating quantity, and variant
+  // This will add, remove, or update items in the cart based on quantity.
   const updateLineItem = async ({ variantId, quantity }) => {
     // if no checkout id, create a new checkout
     let newCheckout = checkout || (await client.checkout.create());

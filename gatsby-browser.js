@@ -1,3 +1,6 @@
+// Rendered client side, ie. producing the dynamic content.
+// Should be exactly the same gatsby-ssr.js
+
 import React from 'react';
 import { ProductContextProvider } from './src/context/ProductContext';
 import { CartContextProvider } from './src/context/CartContext';
